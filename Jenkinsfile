@@ -10,7 +10,8 @@ pipeline {
         }
         stage('ShellScript1') {
           steps {
-            sh '''echo "JAVA_HOME: $JAVA_HOME"
+            sh '''#!/bin/bash
+java -version
 uname -a'''
           }
         }
